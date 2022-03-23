@@ -1,0 +1,30 @@
+<p>student works!</p>
+<table border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>place</th>
+    </tr>
+
+<tr *ngFor="let x of Student">
+       <td> {{x.Name}} </td>
+        <td>{{x.Mobile}}</td>
+        <td>{{x.Place}}</td>
+</tr>
+</table><br>
+<div>
+        
+<h1 *ngIf="false; else elseBlock">welcome</h1>
+<ng-template #elseBlock>learning {{name}}</ng-template>
+</div><br>
+<div [ngSwitch]="myChoice">
+    <div class ="switchCase">
+        <div *ngSwitchCase = "'one'">1.addition</div>
+        <div *ngSwitchCase = "'two'">2.Subtraction</div>
+        <div *ngSwitchCase = "'three'">3.Multiplication</div>
+        <div *ngSwitchCase = "'four'">4.Division</div>
+        <div *ngSwitchDefault>Invalid Choice</div>
+
+    </div>
+</div>
+{{student}}

@@ -1,0 +1,25 @@
+<div align='center'><h1>Employee Table with curd operations</h1></div>
+<div>
+  <table class='table' style="width: 80%;">
+    <tr>
+    <th>EmployeeId</th>
+    <th>EmployeeName</th>
+    <th>Salary</th>
+    <th>Date of Birth</th>
+  </tr>
+  <tr *ngFor="let employee of Employee"></tr>
+  <td>{{employee.id}}</td>
+  <td>{{employee.name}}</td>
+  <td>{{employee.salary}}</td>
+  <td>{{employee.Dob}}</td>
+  </table>
+</div>
+<div>
+<p>
+  <button (click)="addEmployee()">Add Employee</button>
+</p>
+</div>
+
+
+
+<router-outlet></router-outlet>

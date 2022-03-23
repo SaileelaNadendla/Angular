@@ -1,0 +1,20 @@
+<p>image works!</p>
+<div class="container">
+    <div class="jombotorn">
+        <img [ngClass]="['mainImage']" [src]="imageArray[imageIndex]">
+        <div class="row">
+            <div class="col">
+                <button (click)="btn btn-primary" >previous</button>
+                <ng-container>
+                    <img [ngClass]="['mainImage']" [src]="imageArray[image-1]" (click)="change(index-1)">
+                    <img [ngClass]="['mainImage']" [src]="imageArray[image]" (click)="change(index)">
+                    <img [ngClass]="['mainImage']" [src]="imageArray[image+1]" (click)="change(index+1)">
+
+
+                </ng-container>
+                <button (click)="next()" class=" btn btn-primary">next</button>
+            </div>
+        </div>
+    </div>
+
+</div>

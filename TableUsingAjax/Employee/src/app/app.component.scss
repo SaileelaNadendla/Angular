@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+  color: crimson;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    padding:10px;
+    border-color: yellow;  
+  }
+  
+  td,
+  th {
+    
+   border: 1px solid green ;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd){
+      background-color: cornflowerblue;
+  }
+  button{
+    padding:15px;
+    background-color: dimgrey;
+    color:lime;
+    border-radius: 12px;
+  }

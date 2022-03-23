@@ -1,0 +1,13 @@
+<button (click)="getPost()">Get Post</button>
+<button (click)="postData()">PostData</button>
+<button (click)="putData()">PutData</button>
+<button (click)="deleteData()">Delete</button>
+<button (click)="patchData()">patch</button>
+<div *ngFor="let items of posts">
+  {{items.id}} {{items.author}} {{items.title}}
+</div>
+{{responce}}
+
+
+
+<router-outlet></router-outlet>

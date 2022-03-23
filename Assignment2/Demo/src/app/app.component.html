@@ -1,0 +1,26 @@
+<p>pipes works!</p>
+<app-pipes></app-pipes>
+
+<h1>{{Pipes}}</h1>
+<h2>{{msg | lowercase}} </h2>
+<h2>{{Pipes |uppercase}}</h2>
+<h3>{{msg | titlecase}}</h3>
+<h3>{{Pipes | slice:4}}</h3>
+<h3>{{msg | slice: 0:7}}</h3>
+<h3>{{person |json}}</h3>
+<h3>Custome pipe</h3>
+    <div>{{person.place | highlightPipe: person.place}}</div>
+
+<h2>{{2.435 |number: '2.2-3'}}</h2>
+<h2>{{.435 |number: '3.2-2'}}</h2>
+<div align='center'>
+    <h1>Date functions</h1>
+    <h3>{{date}}</h3>
+    <h3>{{date | date: 'short'}}</h3>
+    <h3>{{date |date: 'shortDate'}}</h3>
+    <h3>{{date |date: 'medium'}}</h3>
+    <h3>{{date |date: 'mediumDate'}}</h3>
+    <h3>{{date |date: 'mediumTime'}}</h3>
+    <h3>{{date |date: 'long'}}</h3>
+    <h3>{{date |date: 'longDate'}}</h3>
+</div>

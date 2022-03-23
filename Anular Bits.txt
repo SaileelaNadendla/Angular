@@ -1,0 +1,14 @@
+                                                          Anglar Bits
+                                                      ---------------------
+
+Synchronous:
+-----------------
+          Synchronous data transmission is a data transfer method in which is a continuous stream of data signals accompanied by timing signals. It helps to ensure that the transmitter and the receiver are synchronized with each other.
+
+asynchronous:
+--------------------
+	Asynchronous Transmission is also known as start/stop transmission, sends data from the sender to the receiver using the flow control method. It does not use a clock to synchronize data between the source and destination.
+
+call Stack:
+-------------
+  By using the Call Stack window, you can view the function or procedure calls that are currently on the stack. The Call Stack window shows the order in which methods and functions are getting called.

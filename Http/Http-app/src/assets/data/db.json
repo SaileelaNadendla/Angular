@@ -1,0 +1,36 @@
+{
+    "student":[
+      {
+        "id": 1,
+        "name": "json-server",
+        "course": "typicode"
+      },
+      {
+        "id":2,
+         "name":"sai", 
+         "course":"angular"
+        },
+      {
+        "id":3, 
+        "name":"chinna",
+         "course":"angular"
+        },
+      {
+        "id":4, 
+        "name":"pandu", 
+        "course":"html"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
+
+    

@@ -1,0 +1,53 @@
+{
+  "Employees": [
+    {
+      "id": "1",
+      "firstName": "Sai",
+      "lastName": "Leela",
+      "Email": "saileela@gmail.com",
+      "Mobile": "1234567"
+    },
+    {
+      "id": "2",
+      "firstName": "Swathi",
+      "lastName": "roy",
+      "Email": "swathi@gmail.com",
+      "Mobile": "1456744"
+    },
+    {
+      "id": "3",
+      "firstName": "Niki",
+      "lastName": "yas",
+      "Email": "niki@gmail.com",
+      "Mobile": "4553556"
+    },
+    {
+      "id": "4",
+      "firstName": "Pandu",
+      "lastName": "Thalli",
+      "Email": "pandu@gmail.com",
+      "Mobile": "32535332"
+    },
+    {
+      "id": "5",
+      "firstName": "Pandu",
+      "lastName": "Thalli",
+      "Email": "pandu@gmail.com",
+      "Mobile": "32535332"
+    },
+    {
+      "id": 8,
+      "firstName": "lakshmi",
+      "lastName": "valluri",
+      "Email": "varshni@google.com",
+      "Mobile": "67465554"
+    },
+    {
+      "id": 10,
+      "firstName": "rama",
+      "lastName": "ms",
+      "Email": "msrama@google.com",
+      "Mobile": "73473554"
+    }
+  ]
+}

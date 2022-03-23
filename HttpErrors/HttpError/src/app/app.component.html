@@ -1,0 +1,12 @@
+<button (click)="getPosts()">Get Data</button>
+<button (click)="postData()">Post Data</button>
+<button (click)="putData">Put Data</button>
+<button (click)="deleteData()">Delete Data</button>
+
+<br>
+
+<div *ngFor="let items of posts">
+  {{items.id}} {{items.course}}
+</div><br>
+<p>{{response}}</p>
+<router-outlet></router-outlet>

@@ -1,0 +1,13 @@
+
+<ul>
+    <li *ngFor="let x of data">{{x}}</li>
+</ul><br>
+<p>Form Label</p>
+<form>
+<label for="name">Enter Name:</label><br>
+<input  id="name" type="text" [formControl]="name" />
+<p>value:{{name.value}}</p>
+<button (click)="updateName()">updateName</button>
+</form>
+<p>publish works!</p>
+<button  class="btn btn-outline-primary" (click)="publishData('hello')">publish</button> <br>

@@ -1,0 +1,27 @@
+
+{{parent}}
+<p>eventemitters works!</p>
+<label>
+    addValue
+</label>
+<input type="text" #form>
+<button (click)="getValue(form.value)" >Flowers</button>
+<!-- <div>
+    <ul *ngFor="let y of Employees">
+        <li>{{y.id}}{{y.Empname}}</li>
+    </ul>
+    
+</div>  -->
+
+<label >
+    addEmployee
+</label>
+<input type="text" #getemp>
+<button (click)="service.pushEmployees(getemp.value)"> ADD EMP</button>
+<div>
+
+        {{service.Employees | json}}<br>
+
+    
+</div>
+

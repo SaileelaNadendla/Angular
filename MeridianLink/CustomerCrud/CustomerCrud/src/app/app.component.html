@@ -1,0 +1,40 @@
+<div class="row">
+    <h2 class="text-center">Customer List</h2>
+</div>
+<table id = Customer>
+    <thead>
+        <tr>
+            <th>customerId</th>
+            <th>customerName</th>
+            <th>dob</th>
+            <th>gender</th>
+            <th>address</th>
+            <th>city</th>
+            <th>country</th>
+            <th>pincode</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cust of customer">
+            <td>{{cust.customerId}}</td>
+            <td>{{cust.customerName}}</td>
+            <td>{{cust.dob}}</td>
+            <td>{{cust.gender}}</td>
+            <td>{{cust.address}}</td>
+            <td>{{cust.city}}</td>
+            <td>{{cust.country}}</td>
+            <td>{{cust.pincode}}</td>
+
+        </tr>
+    </tbody>
+
+</table>
+<div>
+    <button (click)="getCustomers()">GET</button> 
+    <button (click)="createCutomers()">POST</button>
+    <button (click)="deleteCustomers()">DELETE</button>
+    <button (click)="updateCustomers()">UPDATE</button>
+</div>
+
+

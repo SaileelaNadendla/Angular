@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "typescript",
+      "author": "ravi sir",
+      "id": 2
+    },
+    {
+      "title": "java",
+      "author": "sai",
+      "id": 3
+    },
+    {
+      "title": "python",
+      "author": "pandu",
+      "id": 5
+    },
+    {
+      "title": "http",
+      "author": "srikanth",
+      "id": 6
+    },
+    {
+      "title": "json",
+      "author": "vidya",
+      "id": 7
+    },
+    {
+      "title": "json",
+      "author": "vidya",
+      "id": 8
+    },
+    {
+      "title": "json",
+      "author": "vidya",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

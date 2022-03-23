@@ -1,0 +1,23 @@
+<h1>NGRX Operations</h1>
+
+<p>{{solution | async}}</p>
+
+
+<button (click)="addValue()">ADD</button>
+<button (click)="subValue()">SUB</button>
+<button (click)="mulValue()">MUL</button>
+<button (click)="reset()">RESET</button>
+<app-eventemitters [parent]="result" (child)="getFlower($event)"></app-eventemitters>
+<div>
+  <ul *ngFor= "let x of flowers">
+    <li>{{x}}</li>
+  </ul>
+  
+</div>
+<app-temperature></app-temperature>
+<app-rxjs></app-rxjs>
+<app-book></app-book>
+
+
+<router-outlet></router-outlet>
+

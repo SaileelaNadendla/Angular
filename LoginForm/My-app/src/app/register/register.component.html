@@ -1,0 +1,50 @@
+<p>Registration Form</p>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <form [formGroup]="register" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="UserName">FirstName</label>
+                     <input type="email" formControlName="FirstName" class="form-control" placeholder="Firstname " [ngClass]="{'is-invalid':submitted && f.FirstName.errors}">
+                     <div *ngIf="submitted && f.FirstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.FirstName.errors.required">Firstname is required</div>
+                     </div>
+                </div>   
+                     <div class="form-group">
+                    <label ><b>LastName</b></label>
+                    <input type="text" formControlName="LastName" class="form-control" [ngClass]="{'is-invalid':submitted && f.LastName.errors}"/>
+                    <div *ngIf="submitted && f.LastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.LastName.errors.required">LastName is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label ><b>Email</b></label>
+                    <input type="text" formControlName="Email" class="form-control" [ngClass]="{'is-invalid':submitted && f.Email.errors}"/>
+                    <div *ngIf="submitted && f.Email.errors" class="invalid-feedback">
+                        <div *ngIf="f.Email.errors.required">Email is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label ><b>MobileNo</b></label>
+                    <input type="text" formControlName="MobileNo" class="form-control" [ngClass]="{'is-invalid':submitted && f.MobileNo.errors}"/>
+                    <div *ngIf="submitted && f.MobileNo.errors" class="invalid-feedback">
+                        <div *ngIf="f.MobileNo.errors.required">Mobile Number is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label ><b>DOB</b></label>
+                    <input type="text" formControlName="DOB" class="form-control" [ngClass]="{'is-invalid':submitted && f.DOB.errors}"/>
+                    <div *ngIf="submitted && f.DOB.errors" class="invalid-feedback">
+                        <div *ngIf="f.DOB.errors.required">Date of birth is required</div>
+                    </div>
+                </div>
+                <div class="form-group"></div>
+                <div ><button class="btn btn-success" type="button" (click)="onSubmit()" routerLink=''>Register</button></div>&nbsp;&nbsp;
+                
+            </form>
+        </div>
+
+    </div>
+   
+</div>
+

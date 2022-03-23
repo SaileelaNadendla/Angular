@@ -1,0 +1,10 @@
+welcome {{firstName}}{{lastName}}
+<br>
+[innerHtml]="text"
+<button [disabled]="isDisabled">button is disable</button>
+<div [className]="getClass()">getClass</div>
+<div [class.red]="tit" [class.blue]="title">value is not there</div>
+
+<app-student [student]="data" (studentChange)="upDate()"></app-student>
+<app-subject></app-subject>
+

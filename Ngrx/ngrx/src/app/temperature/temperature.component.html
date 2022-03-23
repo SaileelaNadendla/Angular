@@ -1,0 +1,23 @@
+<p>temperature works!</p>
+ <input type="text" #text data-ng-model="onfarenhit">
+<button (click)="convert(text.value)">convert</button>
+<br>
+<input type="checkbox"  id="centigraud" (click)="onfarenhit"   />centigraud
+<br>
+<input type="checkbox"  id="Fahernheat" (click)="oncelsus" />Fahernheat 
+{{result}}
+{{res2}}
+
+
+
+<!-- <div class="row">
+    <p>Fahernheat:<input type="text" [(ngModel)]="Fahernheat" /> Celsius: {{Fahernheat | tempConverter:'c'}}</p>
+</div>
+<div class="row">
+    <h3>Celsius to Fahernheat</h3>
+
+</div>
+<div class="row">
+    <p>Celsius: <input type="text" [(ngModel)="Celsius"] /> Fahernheat : {{Celsius | tempConverter: 'f'}}}</p>
+
+</div> -->

@@ -1,0 +1,107 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "responseType": "json",
+      "id": 2
+    },
+    {
+      "responseType": "json",
+      "id": 3
+    },
+    {
+      "title": "test-server",
+      "id": 4
+    },
+    {
+      "title": "test-server",
+      "id": 5
+    },
+    {
+      "title": "test-server",
+      "id": 7
+    },
+    {
+      "title": "test-server",
+      "id": 8
+    },
+    {
+      "title": "test-server",
+      "id": 9
+    },
+    {
+      "title": "leela",
+      "id": 10
+    },
+    {
+      "title": "test-server",
+      "id": 11
+    },
+    {
+      "title": "test-server",
+      "id": 12
+    },
+    {
+      "title": "test-server",
+      "id": 13
+    },
+    {
+      "title": "test-server",
+      "id": 14
+    },
+    {
+      "title": "test-server",
+      "id": 15
+    },
+    {
+      "title": "test-server",
+      "id": 16
+    },
+    {
+      "title": "test-server",
+      "id": 17
+    },
+    {
+      "title": "test-server",
+      "id": 18
+    },
+    {
+      "title": "test-server",
+      "id": 19
+    },
+    {
+      "title": "test-server",
+      "author": "sai",
+      "id": 21
+    },
+    {
+      "title": "test-server",
+      "author": "sai",
+      "id": 22
+    },
+    {
+      "title": "test-server",
+      "author": "sai",
+      "id": 23
+    },
+    {
+      "title": "test-server",
+      "author": "sai",
+      "id": 24
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

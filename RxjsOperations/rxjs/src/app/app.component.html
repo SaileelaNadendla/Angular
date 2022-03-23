@@ -1,0 +1,15 @@
+<body>
+    
+
+<h1>change detection</h1>
+<input #inputFlower type="text" placeholder="Enter new item">
+<button (click)=" addNewItem(inputFlower.value)">Add Flower</button>
+<app-publish [data]="Flowers"></app-publish> <br>
+<button [disabled]="isDisabled">disabled</button>
+<button [value]="getMethod()">get</button>
+{{title}}
+<app-customer1></app-customer1><br>
+ <app-customer2></app-customer2>
+<app-observable></app-observable>
+<router-outlet></router-outlet>
+</body>

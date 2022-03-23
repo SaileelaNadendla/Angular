@@ -1,0 +1,41 @@
+
+<h1>Employee Table</h1>
+<table id="employee" >
+  <tr >
+    <th>id</th>
+    <th>firstName</th>
+    <th>lastName</th>
+    <th>Email</th>
+    <th>Mobile</th> 
+  </tr>
+  <tr *ngFor="let emp of Employees">  
+    
+    <td> {{emp.id}}</td>
+    <td>{{emp.firstName}} </td> 
+    <td>{{emp.lastName}} </td>
+    <td>{{emp.Email}} </td> 
+    <td>{{emp.Mobile}}</td> 
+    
+    
+  </tr>
+  
+</table><br>
+  <div>
+    <button (click)="getEmployee()">GET</button> 
+    <button (click)="createEmployee()">POST</button>
+    <button (click)="deleteEmployee()">DELETE</button>
+    <button (click)="putEmployee()">PUT</button>
+  </div>
+
+
+
+  
+  
+  
+
+
+
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,47 @@
+<div class="row">
+    <h2 class="text-center">Customer List</h2>
+</div>
+<nav class="navbar"> 
+    search by name:
+    <input type="text" class="form-control" name="customerName"
+     placeholder="enter first name" [(ngModel)]="customerName" (ngModelChange)="search()">
+
+</nav>
+<table class="table table-striped table-border">
+    <thead>
+        <tr>
+            <th></th>
+            <th (click)="sort('customerName')"> customerName &nbsp;</th>
+            <th>dob</th>
+            <th>gender</th>
+            <th>address</th>
+            <th>city</th>
+            <th>country</th>
+            <th>pincode</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cust of customer | orderBy:key:reverse">
+            <td>{{cust.customerId}}</td>
+            <td>{{cust.customerName}}</td>
+            <td>{{cust.dob}}</td>
+            <td>{{cust.gender}}</td>
+            <td>{{cust.address}}</td>
+            <td>{{cust.city}}</td>
+            <td>{{cust.country}}</td>
+            <td>{{cust.pincode}}</td>
+
+            <td>
+                <button (click)="updateCustomer(cust.customerId)" class="btn btn-primary">Update</button>
+                <button (click)="deleteCustomer(cust.customerId)" class="btn btn-danger" style="margin: left 10px;">Delete</button>
+             <!-- <button (click)="customerList(cust.customerId)" class="btn btn-primary" style="margin: left 10px;">View</button> -->
+
+            </td>
+
+
+        </tr>
+    </tbody>
+
+</table>
+

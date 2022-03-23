@@ -1,0 +1,15 @@
+<p>calculator works!</p>
+<h1>SI calculator</h1>
+<label>principal</label>
+<input type="number" (ngmodelchange)="calculate()" [(ngModel)]="principal">
+<br>
+<label >Rate %</label>
+<input type="range" (click)="calculate()" [(ngModel)]="rate"> {{rate}}%
+<br>
+<label >Months</label>
+<input type="range" (click)="calculate()" [(ngModel)]="months"> {{months}} Months
+
+<br>
+<p>simple Interest:{{SI | currency}}</p>
+
+<p>Total:{{total | currency}}</p>
