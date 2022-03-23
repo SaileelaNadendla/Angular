@@ -1,0 +1,24 @@
+{
+  "Customers": [
+    {
+      "customerId": "1",
+      "customerName": "anu",
+      "dob": "6-12-95",
+      "gender": "female",
+      "address": "gnt",
+      "city": "guntur",
+      "country": "india",
+      "pincode": "632653"
+    },
+    {
+      "customerId": "2",
+      "customerName": "chinna",
+      "dob": "19-12-95",
+      "gender": "male",
+      "address": "gnt",
+      "city": "guntur",
+      "country": "india",
+      "pincode": "736367"
+    }
+  ]
+}
