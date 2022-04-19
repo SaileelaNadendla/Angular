@@ -8,9 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { UpdateCustomerComponent } from './update-customer/update-customer.component'
-import {Ng2SearchPipeModule} from 'ng2-search-filter';
-import { SortPipePipe } from './sort-pipe.pipe'
-import { Ng2OrderModule } from 'ng2-order-pipe';
+//import {Ng2SearchPipeModule} from 'ng2-search-filter';
+import { SortPipePipe } from './sort-pipe.pipe';
+
+//import { Ng2OrderModule } from 'ng2-order-pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
     CustomerComponent,
     CustomerListComponent,
     UpdateCustomerComponent,
-    SortPipePipe
+    SortPipePipe,
+    
   ],
   imports: [
     BrowserModule,
@@ -27,8 +29,8 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    Ng2SearchPipeModule,
-    Ng2OrderModule
+   // Ng2SearchPipeModule,
+   // Ng2OrderModule
     
     
     

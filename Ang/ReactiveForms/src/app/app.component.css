@@ -1,0 +1,8 @@
+.content{
+    max-width: 500px;
+    text-align: center;
+    color: blueviolet;
+    margin: auto;
+    background-color: cyan;
+    padding: 2% 5%;
+}

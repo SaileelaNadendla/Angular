@@ -20,7 +20,7 @@ export class CustomerComponent implements OnInit {
 
   ngOnInit(): void {
     this.cust = this.formBuilder.group({
-      customerId:['',Validators.required],
+      customerId:['',Validators.minLength(6)],
       customerName:['',Validators.required],
       dob:['',Validators.required],
       gender:['',Validators.required],
@@ -36,6 +36,7 @@ export class CustomerComponent implements OnInit {
   saveCustomer(){
     this.service.createCustomer(this.cust.value).subscribe(data=>{
       console.log(data);
+
     },  
       (error: any) => alert("some thing went worng!"),
      ()=>this.router.navigate(['/'])
@@ -43,9 +44,10 @@ export class CustomerComponent implements OnInit {
   }
   
   onSubmit(){
+    //alert((this.submitted && this.f.gender.errors));
     console.log(this.customer);
     this.saveCustomer();
-    //this.router.navigate(['/'])
+    this.router.navigate(['/'])
   
   }
   

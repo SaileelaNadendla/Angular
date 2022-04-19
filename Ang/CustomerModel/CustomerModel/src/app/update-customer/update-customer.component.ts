@@ -15,6 +15,7 @@ export class UpdateCustomerComponent implements OnInit {
 
 
   constructor(private service:CustomerServiceService, private router:ActivatedRoute, private route:Router) { }
+  
 
   ngOnInit(): void {
    
@@ -27,7 +28,8 @@ export class UpdateCustomerComponent implements OnInit {
   }
 
   onSubmit(){
-    this.service.updateCustomer(this.customerId, this.customer).subscribe(data =>{
+    this.service.updateCustomer(this.customerId, this.customer)
+    .subscribe(data =>{
       console.log(data);
      
       this.route.navigate(['/customers'])
